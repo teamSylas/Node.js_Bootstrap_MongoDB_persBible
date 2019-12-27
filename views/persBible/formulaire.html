@@ -1,0 +1,68 @@
+{% extends "layout.html" %}
+{% block content %}
+    <form action="{{endpoint}}" method="POST" enctype="multipart/form-data">
+         <div class="fprm-group">
+             <label for="name"> Nom du personnage </label>
+             <input type="text" id ="name" name="name" class="form-control" value="{{persBible.name}}">
+         </div>
+
+         <div class="fprm-group">
+            <label for="number"> Numero du personnage </label>
+            <input type="number" id ="number" name="number" class="form-control" value="{{persBible.number}}">
+         </div>
+
+         <div class="fprm-group">
+            <label for="description"> Description du personnage </label>
+            <textarea class="form-control" id="description" name="description">{{persBible.description}}</textarea>
+         </div>
+        
+         <div class="fprm-group">
+            <label for="file"> Image du personnage </label>
+            <input type="file" id ="file" name="file" class="form-control">
+         </div>
+         <br>
+
+         <div class="fprm-group">
+            <label for="file"> Type du personnage </label>
+            <select name="types" id="types" {{persBible.types}}>
+                <option value="">{{persBible.types}}</option>
+                <option value="Roi">Roi</option>
+                <option value="Prophete">Prophete</option>
+                <option value="Apotre">apotre</option>
+                <option value="Patriarche">Patriarche</option>
+                <option value="Reine">Reine</option>
+                <option value="Responsable">responsable</option>
+            </select>
+         </div>
+
+         <div class="fprm-group">
+            <label for="file"> couleur en fonction du type de personnage  </label>
+            <select name="color" id="color" {{persBible.color}}>
+                <option value="">{{persBible.color}}</option>
+                <option value="orange">Orange</option>
+                <option value="pink">Pink</option>
+                <option value="coral">Coral</option>
+                <option value="gold">Gold</option>
+                <option value="chocolate">Chocolate</option>
+                <option value="salmon">Salmon</option>
+            </select>
+         </div>
+         <br>
+         <br>
+         <div class="form-group">
+            <!-- {% for type in types %}
+                <label>
+                    <em> Differents type de personnage  </em> -->
+<!-- pour precocher les case de type selon le type de personage il va saloire recupere tous les types -->
+<!-- puis avec un if recupere le type en fonction du personage et verifier que l'id du type exciste dans le tableau --> 
+                    <!-- <input type="checkbox" name="types[]" value="{{type._id}}" {% if persBible.types.indexOf(type._id) != -1 %} checked {%endif%}>
+                    {{type.name}}
+                </label>
+            {% endfor%} -->
+         </div>
+         <!-- pour le type nous allons faire une boucle pour recuper tous les types et les faire dans une chekbox -->
+
+
+         <input type="submit" class="btn btn-primary" value="Enregistrer" />
+    </form>
+{% endblock%}

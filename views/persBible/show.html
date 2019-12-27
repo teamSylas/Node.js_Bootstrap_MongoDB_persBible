@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="row">
+    <div class="col-sm-3">
+
+        <img src="/uploads/{{persBible.picture}}" alt="{{persBible.name}}" style="width:100%" class="img-rounded">
+    </div>
+    <div class="col-sm-9">
+        <h2>{{persBible.name}} <small> Personnage biblique nº {{persBible.number}}</small> </h2>
+        <a href="/formulaire/{{persBible._id}}" class="btn btn-info">Editer</a>
+        <a href="/delete/{{persBible._id}}" class="btn btn-danger">Suprimer</a>
+
+        <p class="lead">
+            {{persBible.description}}
+        </p>
+        <h3>Type de Personnage : </h3>
+        <span style="background-color:{{persBible.color}}" class="label label-default">{{persBible.types}}</span>
+    </div>
+
+</div>
+{%endblock%}

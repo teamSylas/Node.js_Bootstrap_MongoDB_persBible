@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<h2>Personage Biblique </h2>
+
+    {% for p in persBible%}
+        <div class="pane">
+            <div class="panel-headin">
+                <a href="/{{p._id}}">{{p.name}}</a>
+            </div>
+            <div class="panel-body">
+                {{p.description}}
+            </div>
+        
+        </div>
+    {% endfor%}
+{%endblock%}
