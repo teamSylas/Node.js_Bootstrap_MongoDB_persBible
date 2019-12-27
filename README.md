@@ -16,7 +16,7 @@
 - app.js : contient tous les appelle des autre ficher du projet 
 	* les routes
 	* le server
-	*la connections à la base de données 
+	* la connections à la base de données 
 - Le Dossier Model : contient les ficher de base de données :
 	* déclaration des chants de la base mongose
 	* déflation des relations entre les base 
