@@ -9,7 +9,9 @@
 > npm install -- save express mongoose nunjucks bootstrap 
 
 # gestion de l'image et du submite
+
   > npm install body-parser --save
+  
   > npm install multer --save    
 
 # description de l'organisation du projet 
