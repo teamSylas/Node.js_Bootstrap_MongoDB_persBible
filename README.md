@@ -1,9 +1,11 @@
 # utilisation 
- npm init 
-# pour installer mongole 
+ npm init
+ installer mongole sur votre système
 # mongoose pour manipuler la base de données 
-# numjucks monter de temples pour générer et inclure de données a l'intérieur des page web 
-# bootstrap libretti CSS
+# express pour simplifier le processus de création de l'application
+# numjucks moteur de temples pour générer les page et, inclure des données à  l'intérieur des page web 
+# bootstrap Library  CSS pour faire de belle page web
+•	On installe tout ça avec cette commande 
  npm install -- save express mongoose nunjucks bootstrap 
 
 # gestion de l'image et du submite
@@ -11,19 +13,19 @@
    npm install multer --save    
 
 # description de l'organisation du projet 
-# app.js : contient tous les appelle des autre ficher du projet 
+•	app.js : contient tous les appelle des autre ficher du projet 
 	- les routes
-	- le servert
-	- la connections a la base de données 
-# Le Dossier Model : contient les ficher de base de données :
+	- le server
+	- la connections à la base de données 
+•	Le Dossier Model : contient les ficher de base de données :
 	- déclaration des chants de la base mongose
-	- déflation des relation entre les base 
+	- déflation des relations entre les base 
 
-#  Le Dossier routes : qui contient tous les route Ves les base données 
+•	Le Dossier routes : qui contient tous les route vers les base données 
 	- route vers la base de données
 	- rectale de la base de données
-# Le views contient l'interface client :	
-	- pour les personnage 
+•	Le views contient l'interface client :	
+	- pour les personnages 
 	
 
 
